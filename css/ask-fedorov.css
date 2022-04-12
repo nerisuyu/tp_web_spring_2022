@@ -1,0 +1,46 @@
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .tags{
+        margin:2px;
+        margin-top:2%;
+      }
+      .best-members{
+        margin:2px;
+        margin-top:10%;
+      }
+      .link{
+        display: inline;
+        text-decoration: underline;
+      }
+      .space{
+        margin:6px;
+
+      }
+      .no-underline{
+        text-decoration: none;
+      }
+      .container.custom-container {
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+          min-height:50px;
+          display: flex;
+          align-items: center;
+    }
+      .section{
+  background: #ecedea;
+  padding: 10px 10px;
+  display: inline-block;
+  margin-right: 20px;}
+        .header{
+  padding: 10px 10px;
+
+
+}
+        .top-buffer { margin-top:10px; }
