@@ -1,0 +1,81 @@
+{% extends "inc/base.html" %}
+{% load static %}
+{% block title %}
+        <h2>Sign Up</h2>
+{% endblock title %}
+
+
+
+{% block content %}
+    <div class="col-md-7">
+
+        <div class="form-group row top-buffer">
+                <label for="login" class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-8">
+                    <a class="error">Sorry! Email taken :(</a>
+                </div>
+            </div>
+
+        <form>
+            <div class="form-group row top-buffer">
+                <label for="login" class="col-sm-3 col-form-label">Login</label>
+                <div class="col-sm-8">
+                    <input type="text"  class="form-control" id="login" value="1234">
+                </div>
+            </div>
+            <div class="form-group row top-buffer">
+                <label for="login" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-8">
+                    <input type="text"  class="form-control" id="login" value="1234@mail.ua">
+                </div>
+            </div>
+            <div class="form-group row top-buffer">
+                <label for="login" class="col-sm-3 col-form-label">Nickname</label>
+                <div class="col-sm-8">
+                    <input type="text"  class="form-control" id="login" value="1234321">
+                </div>
+            </div>
+            <div class="form-group row top-buffer">
+                <label for="login" class="col-sm-3 col-form-label">Password</label>
+                <div class="col-sm-8">
+                    <input type="password"  class="form-control" id="login" value="1234321">
+                </div>
+            </div>
+            <div class="form-group row top-buffer">
+                <label for="login" class="col-sm-3 col-form-label">Repeat password</label>
+                <div class="col-sm-8">
+                    <input type="password"  class="form-control" id="login" value="1234321">
+                </div>
+            </div>
+            <div class="form-group row top-buffer">
+                <label for="login" class="col-sm-3 col-form-label">Avatar</label>
+                <div class="col-sm-8">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </div>
+            <div class="form-group row top-buffer">
+                <label for="tags" class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-8">
+                    <button type="button" class="btn btn-primary">Register</button>
+                </div>
+            </div>
+        </form>
+
+
+
+      </div>
+{% endblock content %}
+
+
+{% block tags %}
+    <h2>Tags</h2>
+    <a>Tag Kek Park Math Physics Charlie Moist Water Food Workout GitHub</a>
+{% endblock tags %}
+
+{% block members %}
+    <h2>Best Members</h2>
+    <a class="link-secondary">Me</a>
+    <a class="link-secondary">My mom</a>
+    <a class="link-secondary">Notch</a>
+    <a class="link-secondary">Nerisuyu</a>
+{% endblock members %}

@@ -1,0 +1,27 @@
+{% load static %}
+<div class="section container-fluid custom-container section card shadow-sm top-buffer">
+    <div class="row">
+        <div class="col-2 ">
+            <img style="width: 80px;" src="{% static 'img/blank_userpic.png' %}">
+        </div>
+        <div class="col-10">
+            <h3 class="card-text "><a href="{% url "question" question.number  %}">{{ question.title }}</a></h3>
+            <p class="card-text">{{   question.text }}</p>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-2">
+            <div class="btn-group ">
+                <button type="button" class="btn btn-sm btn-outline-primary">-</button>
+                <button type="button" class="btn btn-sm btn-outline-primary">-15</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">+</button>
+            </div>
+        </div>
+        <div class="col-10 d-flex justify-content-left top-buffer">
+            <a class="space no-underline text-dark">Tags: </a>
+            <a class="space link-secondary ">Dummy </a>
+            <a class="space link-secondary">Stupid </a>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,46 @@
+{% extends "inc/base.html" %}
+{% load static %}
+
+{% block content %}
+    {% include "inc/question.html" %}
+
+    {% for answer in answers %}
+        {% include "inc/answer.html" %}
+    {% endfor %}
+
+
+
+{% endblock content %}
+
+{% block tags %}
+    <h2>Tags</h2>
+    <a>Tag Kek Park Math Physics Charlie Moist Water Food Workout GitHub</a>
+{% endblock tags %}
+
+{% block members %}
+    <h2>Best Members</h2>
+    <a class="link-secondary">Me</a>
+    <a class="link-secondary">My mom</a>
+    <a class="link-secondary">Notch</a>
+    <a class="link-secondary">Nerisuyu</a>
+{% endblock members %}
+
+{% block pagination %}
+<div class="pagination">
+    <span class="step-links">
+        {% if answers.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ answers.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ answers.number }} of {{ answers.paginator.num_pages }}.
+        </span>
+
+        {% if answers.has_next %}
+            <a  href="?page={{ answers.next_page_number }}">next</a>
+            <a href="?page={{ answers.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+{% endblock pagination %}

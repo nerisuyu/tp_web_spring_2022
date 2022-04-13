@@ -1,0 +1,33 @@
+{% load static %}
+<div class="container  border header top-buffer" >
+    <div class="row ">
+        <div class="col-2">
+            <img style="width: 60px;" src="{% static 'img/blank_userpic.png' %}">
+
+        </div>
+        <div class="col-10">
+            <a>{{ answer.text }} </a>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-2">
+            <div class="btn-group ">
+                <button type="button" class="btn btn-sm btn-outline-primary">-</button>
+                <button type="button" class="btn btn-sm btn-outline-primary">15</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">+</button>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="form-check">
+                {% if answer.number == 0 %}
+                <input class="form-check-input" type="checkbox" value=""  >
+                {% else %}
+                <input class="form-check-input" type="checkbox" value="" checked >
+                {% endif %}
+                <label class="form-check-label">
+                    Correct!
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
