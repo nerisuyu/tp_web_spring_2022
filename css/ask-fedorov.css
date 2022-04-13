@@ -19,8 +19,12 @@
       }
       .space{
         margin:6px;
-
       }
+      .error{
+          color: crimson;
+          text-decoration: none;
+      }
+
       .no-underline{
         text-decoration: none;
       }
@@ -34,13 +38,14 @@
           align-items: center;
     }
       .section{
-  background: #ecedea;
-  padding: 10px 10px;
-  display: inline-block;
-  margin-right: 20px;}
-        .header{
-  padding: 10px 10px;
+          background: #ecedea;
+          padding: 10px 10px;
+          display: inline-block;
+          margin-right: 20px;}
+      .header{
+            padding: 10px 10px;
+      }
 
-
-}
-        .top-buffer { margin-top:10px; }
+      .top-buffer {
+          margin-top:10px;
+      }
